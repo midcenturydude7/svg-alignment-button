@@ -7,6 +7,8 @@
 }
 
 body {
+  display: grid;
+  place-items: center;
   background: linear-gradient(
     to bottom,
     hsl(240deg 20% 10%),
@@ -15,4 +17,37 @@ body {
   height: 100vh;
   font-family: "Sofia Pro", sans-serif;
   color: hsl(60deg 100% 95%);
+}
+
+.container {
+  background: fixed hsl(240deg 5% 10%);
+  border: 1px solid hsl(240deg 20% 15%);
+  width: auto 90vw;
+  max-width: 600px;
+  padding: 8rem 10rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px hsl(240deg 20% 10%);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  background: fixed hsl(240deg 10% 15%);
+  border: 1px solid hsl(240deg 20% 20%);
+  color: hsl(60deg 100% 95%);
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  gap: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: hsl(240deg 15% 20%);
+}
+
+p {
+  text-align: center;
+  margin-top: 1rem;
+  color: hsl(60deg 90% 15%);
 }
