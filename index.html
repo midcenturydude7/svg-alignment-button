@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <button>
+      <button id="button">
         <svg
           width="96"
           viewBox="0 0 100 100"
@@ -18,10 +18,53 @@
           stroke-width="5"
           stroke-linecap="round"
           xmlns="http://www.w3.org/2000/svg">
-          <rect x="25" y="29" width="15" height="15" fill="none" rx="5" />
-          <line x1="50" y1="29" x2="75" y2="29" />
-          <line x1="50" y1="43" x2="75" y2="43" />
-          <line x1 ="25" y1="56" x2="75" y2="56" />
+          <rect x="25" y="29" width="15" height="15" fill="none" rx="5">
+            <animate
+              attributeName="width"
+              to="30"
+              dur="0.2s"
+              fill="freeze"
+              begin="button.mouseenter" />
+            <animate
+              attributeName="width"
+              to="15"
+              dur="0.2s"
+              fill="freeze"
+              begin="button.mouseleave" />
+          </rect>
+          <line x1="50" y1="29" x2="75" y2="29">
+            <animate
+              attributeName="x1"
+              to="65"
+              dur="0.2s"
+              fill="freeze"
+              begin="button.mouseenter" />
+            />
+            <animate
+              attributeName="x1"
+              to="50"
+              dur="0.2s"
+              fill="freeze"
+              begin="button.mouseleave" />
+            />
+          </line>
+          <line x1="50" y1="43" x2="75" y2="43">
+            <animate
+              attributeName="x1"
+              to="65"
+              dur="0.2s"
+              fill="freeze"
+              begin="button.mouseenter" />
+            />
+            <animate
+              attributeName="x1"
+              to="50"
+              dur="0.2s"
+              fill="freeze"
+              begin="button.mouseleave" />
+            />
+          </line>
+          <line x1="25" y1="56" x2="75" y2="56" />
           <line x1="25" y1="69" x2="75" y2="69" />
         </svg>
       </button>
