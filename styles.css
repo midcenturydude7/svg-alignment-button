@@ -39,7 +39,7 @@ button {
   font-weight: 500;
   font-size: 1.2rem;
   gap: 4px;
-  transition: background 1s ease;
+  transition: background 0.5s ease;
 }
 
 button:hover {
